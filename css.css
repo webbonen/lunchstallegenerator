@@ -1,0 +1,173 @@
+/********** CLEARFIX **********/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+
+/********** ALLMÄNT **********/
+
+body {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+
+button {
+    display: block;
+    margin: 2rem auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 0.75rem 1.75rem;
+    
+}
+
+
+nav {
+    text-align: right;
+    display: inline;
+    margin: 1rem 3rem 0rem 3rem;
+    width: 75%;
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-bottom: 0px solid green;
+
+}
+
+
+
+
+/********** MAIN **********/
+
+
+h1 {
+    display: inline;
+    background-color: lightpink;
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+section {
+    position: relative;
+}
+
+
+
+/***** RESTAURANGSLUMPARE *****/
+
+.restaurangSlumpare {   
+    background-color: rgb(230, 230, 230);
+}
+
+#slumparinnehallsdiv {
+    text-align: center;
+}
+
+#nattodag {
+    margin-right: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.st0{
+    fill:none;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+    }
+
+.st1{
+    fill: #646464;
+}
+
+#infodiv {
+    width: 50%;
+    padding: 25px 0px;
+    text-align: center;
+    background-color: darkseagreen;
+    margin-top: 20px;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    z-index: 5;
+    display: none;
+}
+
+#tillaggsdiv {
+    width: 60%;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: #8B8B8B;
+    margin-top: 20px;
+    position: absolute;
+    top: 4rem;
+    left: 20%;
+    z-index: 6;
+    display:none;
+}
+
+#listamedrestauranger li {
+    font-weight: 400;
+}
+
+.morkttema {
+    background-color: rgb(75, 75, 75);
+    stroke: white;
+    color: white;
+}
+
+#sol {
+    width: 2em;
+    margin: 1em 1em 1em 0.25em;
+}
+
+#mane {
+    width: 2em;
+    margin: 1em 1em 1em 0.25em;
+}
+
+#dark{
+    display: inline;
+}
+
+#light {
+    display: none;
+}
